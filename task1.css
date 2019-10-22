@@ -1,0 +1,133 @@
+
+/*styling the html body*/
+body 
+  {
+    background-color: #DCDCDC;
+    padding: 0;
+    height:100%;
+    margin:auto;
+  }
+
+/*styling the header of the html body*/
+.header
+  {
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+/* styling the navigation bar*/
+  /*stling the order list item in the naviagtion bar*/
+  ol 
+    {
+      list-style-type: none;
+      margin: auto;
+      padding: 0;
+      overflow: hidden;
+      background-color:#696969;
+      text-align: center;
+    }
+    /*styloing the navigation content*/
+  .nav1 
+    {
+      display: inline-block;
+    }
+
+    /* styling the link in the navigation bar*/
+    li a 
+      {
+        text-decoration: none;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 17px;
+      }
+
+    li a:link {color: white;text-decoration: none;font-weight: normal;}
+
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    li a.active {
+      background-color: #FABB0B;
+    }
+
+/*styling the headings*/
+  h1 
+    {
+      text-align: center;
+    }
+
+/*styling th acordion with hover, not hover and the content style*/
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+ 
+/* Style the footer */
+.footer {background-color: transparent;
+         background-size: 100%;
+         background-repeat: no-repeat;
+         border: none;
+         padding: 5px 7px;
+         text-align: center;
+         float: bottom;}
+
+/*styling the background colors when the animation button is clicked*/
+.b_color {
+      animation: colorchange 50s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 50s; /* Chrome and Safari */
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      50%  {background: blue;}
+      75%  {background: green;}
+      100% {background: red;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      50%  {background: blue;}
+      75%  {background: green;}
+      100% {background: red;}
+    }

@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<!-- setting up link to the external jquery and CSS sheet  -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="task1.css">
+
+
+</head>
+<body > 
+	<!-- Creating the header of the page -->
+	<div class="all">
+	<div class="header" style="background-image: url(images/2.jpeg);">
+		<h1 style="text-align: center;">
+			Peter J. Tshiani
+		</h1>
+		
+		<p style="text-align: center;">
+			<em>developer portfolio</em>
+		</p>
+
+		<nav >
+			<!-- creating the navigation bar -->
+		    <ol>
+	        	<li class="nav1"><a class="active" href="task1.html">Home</a></li> 
+	        </ol>
+		</nav>
+	</div><br/>
+
+	<!-- diverent heading and paragraph with a button that display the content in the paragraph or hide -->
+	<div > 
+		<h2 >Task 1 </h2>
+		<p id="par1">Compusory task1<br/> Creating a page with jquery</p>
+		<button id="hide1">Hide</button>
+		<button id="show1">Show</button>
+	</div>
+	
+	<div>
+		<h2 >Task 2</h2>
+		<p id="par2">Compusory task2<br/> Creating a page with jquery task</p>
+		<button id="hide2">Hide</button>
+		<button id="show2">Show</button>
+	</div>
+
+	<div>
+		<h2 >Bonus</h2>
+		<p id="par3">Compusory task1<br/> Creating a page with jquery</p>		
+		<button id="hide3">Hide</button>
+		<button id="show3">Show</button>
+	</div>
+
+	<!-- creting an accordion of 3 section with it panel (#w3school) -->
+	<div>
+		<h2>Accordion with symbols</h2>
+		<p>
+			In this example we have added a "plus" sign to each button. When the user clicks on the button, the "plus" sign is replaced with a "minus" sign.
+		</p>
+		<button class="accordion">Section 1</button>
+		
+		<div class="panel">
+		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+
+		<button class="accordion">Section 2</button>
+		<div class="panel">
+		  <p>
+		  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		  </p>
+		</div>
+
+		<button class="accordion">Section 3</button>
+		<div class="panel">
+		  <p>
+		  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		  </p>
+		</div><br/>
+
+	</div>
+
+	<!-- aminate images when a buitton is clicked. -->
+	<div style="width: 100%;">
+		<img id="picture1" src="images/2.jpeg" style="width: 24%;height: 25%;">
+		<img id="picture2" src="images/image_11.jpg" style="width: 24%;height: 30%;">
+		<img id="picture3" src="images/image_17.jpg" style="width: 24%;height: 30%;">
+		<img id="picture4" src="images/image_29.jpg" style="width: 24%;height: 30%;">
+	</div>
+	<!-- button when clicked its animate the image above. -->
+	<button id="pic1" style="width: 24%;">Pic 1</button>
+	<button id="pic2" style="width: 24%;">Pic 2</button>
+	<button id="pic3" style="width: 24%;">Pic 3</button>
+	<button id="pic4" style="width: 24%;">Pic 4</button>
+	<br/><br/>
+
+	
+
+	
+	<!-- creating a footer -->
+</div>
+<!-- Buitton that animate all content and stop the anition -->
+	<button id="stop" style="width: 40%; color: "> STOP !</button>
+	<button id="animate" style="width: 40%; color: "> ANIMATE</button>
+	<script type="text/javascript" src="task1.js"></script>
+	<br/>
+	<div class="footer" style="background-image: url(images/2.jpeg);">
+		<p>porfolio © Peter J Tshiani. All rights reserved.</p>
+	</div>
+</body>
+</html>
